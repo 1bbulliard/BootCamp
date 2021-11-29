@@ -13,6 +13,8 @@
 		DF31592D2755320E00B8725A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31591B2755320D00B8725A /* ContentView.swift */; };
 		DF31592E2755320E00B8725A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF31591C2755320E00B8725A /* Assets.xcassets */; };
 		DF31592F2755320E00B8725A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF31591C2755320E00B8725A /* Assets.xcassets */; };
+		DF31593C2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31593B2755325D00B8725A /* InitializerBootCamp_13.swift */; };
+		DF31593D2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31593B2755325D00B8725A /* InitializerBootCamp_13.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		DF3159212755320E00B8725A /* BootCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3159272755320E00B8725A /* BootCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3159292755320E00B8725A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DF31593B2755325D00B8725A /* InitializerBootCamp_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerBootCamp_13.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			children = (
 				DF31591A2755320D00B8725A /* BootCampApp.swift */,
 				DF31591B2755320D00B8725A /* ContentView.swift */,
+				DF31593B2755325D00B8725A /* InitializerBootCamp_13.swift */,
 				DF31591C2755320E00B8725A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF31593C2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */,
 				DF31592C2755320E00B8725A /* ContentView.swift in Sources */,
 				DF31592A2755320E00B8725A /* BootCampApp.swift in Sources */,
 			);
@@ -185,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF31593D2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */,
 				DF31592D2755320E00B8725A /* ContentView.swift in Sources */,
 				DF31592B2755320E00B8725A /* BootCampApp.swift in Sources */,
 			);
