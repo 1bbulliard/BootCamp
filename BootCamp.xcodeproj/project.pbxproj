@@ -15,6 +15,8 @@
 		DF31592F2755320E00B8725A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF31591C2755320E00B8725A /* Assets.xcassets */; };
 		DF31593C2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31593B2755325D00B8725A /* InitializerBootCamp_13.swift */; };
 		DF31593D2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31593B2755325D00B8725A /* InitializerBootCamp_13.swift */; };
+		DF31593F2755844B00B8725A /* TextBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31593E2755844B00B8725A /* TextBootcamp2.swift */; };
+		DF3159402755844B00B8725A /* TextBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31593E2755844B00B8725A /* TextBootcamp2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		DF3159272755320E00B8725A /* BootCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3159292755320E00B8725A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		DF31593B2755325D00B8725A /* InitializerBootCamp_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerBootCamp_13.swift; sourceTree = "<group>"; };
+		DF31593E2755844B00B8725A /* TextBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBootcamp2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 		DF3159142755320D00B8725A = {
 			isa = PBXGroup;
 			children = (
+				DF31593E2755844B00B8725A /* TextBootcamp2.swift */,
 				DF3159192755320D00B8725A /* Shared */,
 				DF3159282755320E00B8725A /* macOS */,
 				DF3159222755320E00B8725A /* Products */,
@@ -182,6 +186,7 @@
 			files = (
 				DF31593C2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */,
 				DF31592C2755320E00B8725A /* ContentView.swift in Sources */,
+				DF31593F2755844B00B8725A /* TextBootcamp2.swift in Sources */,
 				DF31592A2755320E00B8725A /* BootCampApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +197,7 @@
 			files = (
 				DF31593D2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */,
 				DF31592D2755320E00B8725A /* ContentView.swift in Sources */,
+				DF3159402755844B00B8725A /* TextBootcamp2.swift in Sources */,
 				DF31592B2755320E00B8725A /* BootCampApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
