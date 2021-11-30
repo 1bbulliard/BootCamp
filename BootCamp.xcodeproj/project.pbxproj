@@ -23,6 +23,8 @@
 		DF31594627558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */; };
 		DF3159482755AA7100B8725A /* IconsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3159472755AA7100B8725A /* IconsBootcamp.swift */; };
 		DF3159492755AA7100B8725A /* IconsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3159472755AA7100B8725A /* IconsBootcamp.swift */; };
+		DF31594B2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31594A2755AF4B00B8725A /* EnvironmentViewModel51.swift */; };
+		DF31594C2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31594A2755AF4B00B8725A /* EnvironmentViewModel51.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		DF3159412755870000B8725A /* ShapesBootcamp3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesBootcamp3.swift; sourceTree = "<group>"; };
 		DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients_Bootcamp5.swift; sourceTree = "<group>"; };
 		DF3159472755AA7100B8725A /* IconsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsBootcamp.swift; sourceTree = "<group>"; };
+		DF31594A2755AF4B00B8725A /* EnvironmentViewModel51.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentViewModel51.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			children = (
 				DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */,
 				DF3159472755AA7100B8725A /* IconsBootcamp.swift */,
+				DF31594A2755AF4B00B8725A /* EnvironmentViewModel51.swift */,
 				DF31593E2755844B00B8725A /* TextBootcamp2.swift */,
 				DF3159412755870000B8725A /* ShapesBootcamp3.swift */,
 				DF3159192755320D00B8725A /* Shared */,
@@ -202,6 +206,7 @@
 				DF31593F2755844B00B8725A /* TextBootcamp2.swift in Sources */,
 				DF31592A2755320E00B8725A /* BootCampApp.swift in Sources */,
 				DF3159422755870000B8725A /* ShapesBootcamp3.swift in Sources */,
+				DF31594B2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */,
 				DF3159482755AA7100B8725A /* IconsBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +221,7 @@
 				DF3159402755844B00B8725A /* TextBootcamp2.swift in Sources */,
 				DF31592B2755320E00B8725A /* BootCampApp.swift in Sources */,
 				DF3159432755870000B8725A /* ShapesBootcamp3.swift in Sources */,
+				DF31594C2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */,
 				DF3159492755AA7100B8725A /* IconsBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
