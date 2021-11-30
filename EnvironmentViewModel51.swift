@@ -51,6 +51,9 @@ struct EnvironmentViewModel51: View {
 }
 
 struct DetailView: View {
+    
+    //note: this view doesnt use the environment , but just passes one item
+    // to this view
     let selectedItem: String
     
     var body: some View {
