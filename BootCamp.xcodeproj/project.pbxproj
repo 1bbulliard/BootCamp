@@ -19,6 +19,10 @@
 		DF3159402755844B00B8725A /* TextBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31593E2755844B00B8725A /* TextBootcamp2.swift */; };
 		DF3159422755870000B8725A /* ShapesBootcamp3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3159412755870000B8725A /* ShapesBootcamp3.swift */; };
 		DF3159432755870000B8725A /* ShapesBootcamp3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3159412755870000B8725A /* ShapesBootcamp3.swift */; };
+		DF31594527558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */; };
+		DF31594627558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */; };
+		DF3159482755AA7100B8725A /* IconsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3159472755AA7100B8725A /* IconsBootcamp.swift */; };
+		DF3159492755AA7100B8725A /* IconsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3159472755AA7100B8725A /* IconsBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,8 @@
 		DF31593B2755325D00B8725A /* InitializerBootCamp_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerBootCamp_13.swift; sourceTree = "<group>"; };
 		DF31593E2755844B00B8725A /* TextBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBootcamp2.swift; sourceTree = "<group>"; };
 		DF3159412755870000B8725A /* ShapesBootcamp3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesBootcamp3.swift; sourceTree = "<group>"; };
+		DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients_Bootcamp5.swift; sourceTree = "<group>"; };
+		DF3159472755AA7100B8725A /* IconsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		DF3159142755320D00B8725A = {
 			isa = PBXGroup;
 			children = (
+				DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */,
+				DF3159472755AA7100B8725A /* IconsBootcamp.swift */,
 				DF31593E2755844B00B8725A /* TextBootcamp2.swift */,
 				DF3159412755870000B8725A /* ShapesBootcamp3.swift */,
 				DF3159192755320D00B8725A /* Shared */,
@@ -190,9 +198,11 @@
 			files = (
 				DF31593C2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */,
 				DF31592C2755320E00B8725A /* ContentView.swift in Sources */,
+				DF31594527558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */,
 				DF31593F2755844B00B8725A /* TextBootcamp2.swift in Sources */,
 				DF31592A2755320E00B8725A /* BootCampApp.swift in Sources */,
 				DF3159422755870000B8725A /* ShapesBootcamp3.swift in Sources */,
+				DF3159482755AA7100B8725A /* IconsBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +212,11 @@
 			files = (
 				DF31593D2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */,
 				DF31592D2755320E00B8725A /* ContentView.swift in Sources */,
+				DF31594627558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */,
 				DF3159402755844B00B8725A /* TextBootcamp2.swift in Sources */,
 				DF31592B2755320E00B8725A /* BootCampApp.swift in Sources */,
 				DF3159432755870000B8725A /* ShapesBootcamp3.swift in Sources */,
+				DF3159492755AA7100B8725A /* IconsBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
