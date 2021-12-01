@@ -25,13 +25,17 @@ class EnvironmentViewModel: ObservableObject {
         func getData() {
           //  self.dataArray.append("iphone")
           //  self.dataArray.append("ipad")
-            self.dataArray.append(contentsOf: ["Iphone", "Ipad", "Imac", "Apple Watch"])
+            self.dataArray.append(contentsOf: ["Iphone", "Ipad", "Imac", "Apple Watchx1"])
         }
     }
 
 
 struct EnvironmentViewModel51: View {
-
+// to use environment; add the StateObject as i did with the Observable object
+//  then add the.environmentObject below
+    // to each sub view, add:
+    // @EnvironmentObject var viewModel: EnvironmentViewModel
+    
     @StateObject var viewModel:EnvironmentViewModel = EnvironmentViewModel()
 
     var body: some View {
@@ -65,6 +69,7 @@ struct DetailView: View {
                 destination: FinalView(),
                 label: {
                     Text(selectedItem)
+                        
                     .font(.headline)
                 .foregroundColor((.orange))
                 .padding()
