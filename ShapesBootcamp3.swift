@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct ShapesBootcamp3: View {
+  
     var body: some View {
+     
         Circle()
-         
-           // .fill(Color.blue)
+            .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.527, saturation: 0.734, brightness: 0.773)/*@END_MENU_TOKEN@*/)
+            .frame(width: 110, height: 110)
+        
+            
+            
+            
+            
+            
+            
+            
+      
+          //  .background(Color.init(CGColor.init(srgbRed: 5, green: 5, blue: 95, //alpha: 5)))
+           
+                            
           // .stroke(.blue)
            // .stroke(lineWidth: 45)
          //   .stroke(Color.blue, style: StrokeStyle(lineWidth: 22, lineCap: .butt, dash: [10]))

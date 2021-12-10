@@ -12,7 +12,7 @@ import SwiftUI
 //  StateObject and finally in this section
 //  Environment object
 //  all do similar things but differently
-//  i think environment object is "app" wide whereas state and observ objects
+//  environment object is "app" wide whereas state and observ objects
 //     must be passed from view to view (thats biggest diff)
 
 

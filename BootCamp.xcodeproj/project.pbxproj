@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF20DF252760105D0047C288 /* TextSelectionBootCamp56.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF242760105D0047C288 /* TextSelectionBootCamp56.swift */; };
+		DF20DF262760105D0047C288 /* TextSelectionBootCamp56.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF242760105D0047C288 /* TextSelectionBootCamp56.swift */; };
+		DF20DF2827601A020047C288 /* functions_basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF2727601A020047C288 /* functions_basics.swift */; };
+		DF20DF2927601A020047C288 /* functions_basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF2727601A020047C288 /* functions_basics.swift */; };
+		DF20DF2B276137990047C288 /* AppStorageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF2A276137990047C288 /* AppStorageBootcamp.swift */; };
+		DF20DF2C276137990047C288 /* AppStorageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF2A276137990047C288 /* AppStorageBootcamp.swift */; };
+		DF20DF2F27613C8E0047C288 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF2E27613C8E0047C288 /* IntroView.swift */; };
+		DF20DF3027613C8E0047C288 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF2E27613C8E0047C288 /* IntroView.swift */; };
+		DF20DF32276142B80047C288 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF31276142B80047C288 /* OnboardingView.swift */; };
+		DF20DF33276142B80047C288 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF31276142B80047C288 /* OnboardingView.swift */; };
 		DF31592A2755320E00B8725A /* BootCampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31591A2755320D00B8725A /* BootCampApp.swift */; };
 		DF31592B2755320E00B8725A /* BootCampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31591A2755320D00B8725A /* BootCampApp.swift */; };
 		DF31592C2755320E00B8725A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31591B2755320D00B8725A /* ContentView.swift */; };
@@ -28,6 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF20DF242760105D0047C288 /* TextSelectionBootCamp56.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSelectionBootCamp56.swift; sourceTree = "<group>"; };
+		DF20DF2727601A020047C288 /* functions_basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions_basics.swift; sourceTree = "<group>"; };
+		DF20DF2A276137990047C288 /* AppStorageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcamp.swift; sourceTree = "<group>"; };
+		DF20DF2E27613C8E0047C288 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		DF20DF31276142B80047C288 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		DF31591A2755320D00B8725A /* BootCampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootCampApp.swift; sourceTree = "<group>"; };
 		DF31591B2755320D00B8725A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF31591C2755320E00B8725A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,9 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF20DF2D27613C440047C288 /* OnBoardingGroup */ = {
+			isa = PBXGroup;
+			children = (
+				DF20DF2E27613C8E0047C288 /* IntroView.swift */,
+				DF20DF31276142B80047C288 /* OnboardingView.swift */,
+			);
+			path = OnBoardingGroup;
+			sourceTree = "<group>";
+		};
 		DF3159142755320D00B8725A = {
 			isa = PBXGroup;
 			children = (
+				DF20DF2D27613C440047C288 /* OnBoardingGroup */,
+				DF20DF2A276137990047C288 /* AppStorageBootcamp.swift */,
+				DF20DF2727601A020047C288 /* functions_basics.swift */,
+				DF20DF242760105D0047C288 /* TextSelectionBootCamp56.swift */,
 				DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */,
 				DF3159472755AA7100B8725A /* IconsBootcamp.swift */,
 				DF31594A2755AF4B00B8725A /* EnvironmentViewModel51.swift */,
@@ -118,6 +146,8 @@
 			dependencies = (
 			);
 			name = "BootCamp (iOS)";
+			packageProductDependencies = (
+			);
 			productName = "BootCamp (iOS)";
 			productReference = DF3159212755320E00B8725A /* BootCamp.app */;
 			productType = "com.apple.product-type.application";
@@ -166,6 +196,8 @@
 				Base,
 			);
 			mainGroup = DF3159142755320D00B8725A;
+			packageReferences = (
+			);
 			productRefGroup = DF3159222755320E00B8725A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,11 +235,16 @@
 				DF31593C2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */,
 				DF31592C2755320E00B8725A /* ContentView.swift in Sources */,
 				DF31594527558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */,
+				DF20DF252760105D0047C288 /* TextSelectionBootCamp56.swift in Sources */,
 				DF31593F2755844B00B8725A /* TextBootcamp2.swift in Sources */,
+				DF20DF2F27613C8E0047C288 /* IntroView.swift in Sources */,
 				DF31592A2755320E00B8725A /* BootCampApp.swift in Sources */,
+				DF20DF2B276137990047C288 /* AppStorageBootcamp.swift in Sources */,
 				DF3159422755870000B8725A /* ShapesBootcamp3.swift in Sources */,
 				DF31594B2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */,
+				DF20DF2827601A020047C288 /* functions_basics.swift in Sources */,
 				DF3159482755AA7100B8725A /* IconsBootcamp.swift in Sources */,
+				DF20DF32276142B80047C288 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,11 +255,16 @@
 				DF31593D2755325D00B8725A /* InitializerBootCamp_13.swift in Sources */,
 				DF31592D2755320E00B8725A /* ContentView.swift in Sources */,
 				DF31594627558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */,
+				DF20DF262760105D0047C288 /* TextSelectionBootCamp56.swift in Sources */,
 				DF3159402755844B00B8725A /* TextBootcamp2.swift in Sources */,
+				DF20DF3027613C8E0047C288 /* IntroView.swift in Sources */,
 				DF31592B2755320E00B8725A /* BootCampApp.swift in Sources */,
+				DF20DF2C276137990047C288 /* AppStorageBootcamp.swift in Sources */,
 				DF3159432755870000B8725A /* ShapesBootcamp3.swift in Sources */,
 				DF31594C2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */,
+				DF20DF2927601A020047C288 /* functions_basics.swift in Sources */,
 				DF3159492755AA7100B8725A /* IconsBootcamp.swift in Sources */,
+				DF20DF33276142B80047C288 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
