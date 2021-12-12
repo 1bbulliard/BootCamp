@@ -13,10 +13,11 @@ struct OnboardingView: View {
     // 1 - add name
     // 2 - add age
     // 3 - add gender
-    @State var onboardingState: Int = 2
+    @State var onboardingState: Int = 3
     @State var name: String = ""
     @State var age: Double = 50
-    
+    @State var gender
+    : String = ""
     var body: some View {
         ZStack {
             ZStack {
@@ -27,6 +28,8 @@ struct OnboardingView: View {
                     addNameSection
                 case 2:
                     addAgeSection
+                case 3:
+                    addGenderSection
                 default:
                     RoundedRectangle(cornerRadius: 25.0)
                         .foregroundColor(.green)
@@ -133,4 +136,43 @@ extension OnboardingView {
         }
         .padding(30)
     }
+    private var addGenderSection: some View {
+        VStack(spacing:20){
+            Spacer()
+          Text("whats your gender?")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
+            Spacer()
+            HStack{
+                
+                Text("Please select gender below")
+                           Text(gender)
+            }
+           
+            Picker(selection: $gender,
+                   label: Text("select gender please")
+                    .font(.headline)
+                    .foregroundColor(.purple)
+                    .frame(height:55)
+                    .frame(minWidth: .infinity)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                   ,
+                   content: {
+               Text("Male").tag("Male")
+               Text("Female").tag("Female")
+               Text("Non-Binary").tag("non bianary")
+                    
+           })
+               .pickerStyle(MenuPickerStyle())
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            
+        }
+        .padding(30)
+    }
 }
+
