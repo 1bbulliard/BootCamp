@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1C118F2808C04A0098A37B /* CoreDataBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C118E2808C04A0098A37B /* CoreDataBootCamp.swift */; };
+		DF1C11902808C04A0098A37B /* CoreDataBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C118E2808C04A0098A37B /* CoreDataBootCamp.swift */; };
+		DF1C11932808C3A10098A37B /* GPS_Container.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF1C11912808C3A10098A37B /* GPS_Container.xcdatamodeld */; };
+		DF1C11942808C3A10098A37B /* GPS_Container.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF1C11912808C3A10098A37B /* GPS_Container.xcdatamodeld */; };
 		DF20DF252760105D0047C288 /* TextSelectionBootCamp56.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF242760105D0047C288 /* TextSelectionBootCamp56.swift */; };
 		DF20DF262760105D0047C288 /* TextSelectionBootCamp56.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF242760105D0047C288 /* TextSelectionBootCamp56.swift */; };
 		DF20DF2827601A020047C288 /* functions_basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20DF2727601A020047C288 /* functions_basics.swift */; };
@@ -37,9 +41,13 @@
 		DF3159492755AA7100B8725A /* IconsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3159472755AA7100B8725A /* IconsBootcamp.swift */; };
 		DF31594B2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31594A2755AF4B00B8725A /* EnvironmentViewModel51.swift */; };
 		DF31594C2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31594A2755AF4B00B8725A /* EnvironmentViewModel51.swift */; };
+		DF67BFBD2788F81D00CB0B68 /* extension_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BFBC2788F81D00CB0B68 /* extension_view.swift */; };
+		DF67BFBE2788F81D00CB0B68 /* extension_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BFBC2788F81D00CB0B68 /* extension_view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF1C118E2808C04A0098A37B /* CoreDataBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootCamp.swift; sourceTree = "<group>"; };
+		DF1C11922808C3A10098A37B /* GPS_Container.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPS_Container.xcdatamodel; sourceTree = "<group>"; };
 		DF20DF242760105D0047C288 /* TextSelectionBootCamp56.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSelectionBootCamp56.swift; sourceTree = "<group>"; };
 		DF20DF2727601A020047C288 /* functions_basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions_basics.swift; sourceTree = "<group>"; };
 		DF20DF2A276137990047C288 /* AppStorageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcamp.swift; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 		DF31594427558F5700B8725A /* Gradients_Bootcamp5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients_Bootcamp5.swift; sourceTree = "<group>"; };
 		DF3159472755AA7100B8725A /* IconsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsBootcamp.swift; sourceTree = "<group>"; };
 		DF31594A2755AF4B00B8725A /* EnvironmentViewModel51.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentViewModel51.swift; sourceTree = "<group>"; };
+		DF67BFBC2788F81D00CB0B68 /* extension_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_view.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,9 @@
 		DF3159142755320D00B8725A = {
 			isa = PBXGroup;
 			children = (
+				DF1C11912808C3A10098A37B /* GPS_Container.xcdatamodeld */,
+				DF1C118E2808C04A0098A37B /* CoreDataBootCamp.swift */,
+				DF67BFBC2788F81D00CB0B68 /* extension_view.swift */,
 				DF20DF342762EFB40047C288 /* PickerBootcamp.swift */,
 				DF20DF2D27613C440047C288 /* OnBoardingGroup */,
 				DF20DF2A276137990047C288 /* AppStorageBootcamp.swift */,
@@ -241,9 +253,12 @@
 				DF31594527558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */,
 				DF20DF252760105D0047C288 /* TextSelectionBootCamp56.swift in Sources */,
 				DF31593F2755844B00B8725A /* TextBootcamp2.swift in Sources */,
+				DF1C11932808C3A10098A37B /* GPS_Container.xcdatamodeld in Sources */,
 				DF20DF2F27613C8E0047C288 /* IntroView.swift in Sources */,
 				DF31592A2755320E00B8725A /* BootCampApp.swift in Sources */,
 				DF20DF2B276137990047C288 /* AppStorageBootcamp.swift in Sources */,
+				DF67BFBD2788F81D00CB0B68 /* extension_view.swift in Sources */,
+				DF1C118F2808C04A0098A37B /* CoreDataBootCamp.swift in Sources */,
 				DF20DF352762EFB40047C288 /* PickerBootcamp.swift in Sources */,
 				DF3159422755870000B8725A /* ShapesBootcamp3.swift in Sources */,
 				DF31594B2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */,
@@ -262,9 +277,12 @@
 				DF31594627558F5700B8725A /* Gradients_Bootcamp5.swift in Sources */,
 				DF20DF262760105D0047C288 /* TextSelectionBootCamp56.swift in Sources */,
 				DF3159402755844B00B8725A /* TextBootcamp2.swift in Sources */,
+				DF1C11942808C3A10098A37B /* GPS_Container.xcdatamodeld in Sources */,
 				DF20DF3027613C8E0047C288 /* IntroView.swift in Sources */,
 				DF31592B2755320E00B8725A /* BootCampApp.swift in Sources */,
 				DF20DF2C276137990047C288 /* AppStorageBootcamp.swift in Sources */,
+				DF67BFBE2788F81D00CB0B68 /* extension_view.swift in Sources */,
+				DF1C11902808C04A0098A37B /* CoreDataBootCamp.swift in Sources */,
 				DF20DF362762EFB40047C288 /* PickerBootcamp.swift in Sources */,
 				DF3159432755870000B8725A /* ShapesBootcamp3.swift in Sources */,
 				DF31594C2755AF4B00B8725A /* EnvironmentViewModel51.swift in Sources */,
@@ -536,6 +554,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF1C11912808C3A10098A37B /* GPS_Container.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF1C11922808C3A10098A37B /* GPS_Container.xcdatamodel */,
+			);
+			currentVersion = DF1C11922808C3A10098A37B /* GPS_Container.xcdatamodel */;
+			path = GPS_Container.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DF3159152755320D00B8725A /* Project object */;
 }

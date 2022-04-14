@@ -31,10 +31,11 @@ class EnvironmentViewModel: ObservableObject {
 
 
 struct EnvironmentViewModel51: View {
-// to use environment; add the StateObject as i did with the Observable object
-//  then add the.environmentObject below
-    // to each sub view, add:
-    // @EnvironmentObject var viewModel: EnvironmentViewModel
+// To use environment;
+//   1). add the StateObject as i did with the Observable object
+//   2).then add the.environmentObject below. step 1 and 2 are in the initial/primary view
+// To each sub view, add:
+//      @EnvironmentObject var viewModel: EnvironmentViewModel
     
     @StateObject var viewModel:EnvironmentViewModel = EnvironmentViewModel()
 

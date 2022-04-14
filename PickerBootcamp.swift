@@ -37,6 +37,7 @@ struct PickerBootcamp: View {
                    }
               
         )
+                .pickerStyle(MenuPickerStyle())
              
                 .background(Color.white)
             }
