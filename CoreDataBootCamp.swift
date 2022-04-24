@@ -12,7 +12,8 @@ class CoreDataViewModel: ObservableObject{
     let container:NSPersistentContainer
     @Published var savedEntities: [GPSEntity] = []
     @Published var filt = "1"
-    @Published var filt2 = 23
+    @Published var  filt2 = 31
+    @Published var filt3 = 35
     init()
     {
         container = NSPersistentContainer(name: "GPS_Container")
@@ -33,7 +34,9 @@ class CoreDataViewModel: ObservableObject{
   //      request.predicate = NSPredicate(format: "phone_number BEGINSWITH %@", filt)
         
         //  works
-      request.predicate = NSPredicate(format: "lat >  %i", filt2)
+    //  request.predicate = NSPredicate(format: "lat >  %i", filt2)
+        // works!!!
+       request.predicate = NSPredicate(format: "lat > %i and lat < %i", filt2, filt3)
         
 //        let context = <#Managed object context#>
 //        let controller = NSFetchedResultsController(fetchRequest: "fetchRequest", managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
