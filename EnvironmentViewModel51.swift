@@ -14,7 +14,7 @@ import SwiftUI
 //  all do similar things but differently
 //  environment object is "app" wide whereas state and observ objects
 //     must be passed from view to view (thats biggest diff)
-
+// in all classes, the class is ObservableObject and published
 
 class EnvironmentViewModel: ObservableObject {
     @Published var dataArray: [String] = []
@@ -36,7 +36,12 @@ struct EnvironmentViewModel51: View {
 //   2).then add the.environmentObject below. step 1 and 2 are in the initial/primary view
 // To each sub view, add:
 //      @EnvironmentObject var viewModel: EnvironmentViewModel
-    
+//  TO not use environment object, remove environment object and add
+
+//  Note 1: that @StateObject is used whether you use environment or not
+//  Note 2: to use environment object, just add .environmentObject(viewModel)
+//  Note 3: to not use environment object, dont add . environmentObject(viewModel)
+    // do add @ObservedObject var viewModel = ContentViewModel()
     @StateObject var viewModel:EnvironmentViewModel = EnvironmentViewModel()
 
     var body: some View {
@@ -58,7 +63,7 @@ struct EnvironmentViewModel51: View {
 struct DetailView: View {
     
     //note: this view doesnt use the environment , but just passes one item
-    // to this view
+    // to this view so i dont have  @EnvironmentObject var viewModel: EnvironmentViewModel
     let selectedItem: String
     
     var body: some View {
@@ -90,6 +95,11 @@ struct DetailView: View {
 
 
 struct FinalView: View {
+    //note: this view does use the environment
+    // so i added:   @EnvironmentObject var viewModel: EnvironmentViewModel
+    // to use observable object use observable object, remove environment object
+    //     the problem with observable is you may have to pass params is an intermediate view does not use the observable object
+    //  always use environment object to keep it simple
     @EnvironmentObject var viewModel: EnvironmentViewModel
     
     var body: some View {

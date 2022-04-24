@@ -11,6 +11,8 @@ import CoreData
 class CoreDataViewModel: ObservableObject{
     let container:NSPersistentContainer
     @Published var savedEntities: [GPSEntity] = []
+    @Published var filt = "1"
+    @Published var filt2 = 23
     init()
     {
         container = NSPersistentContainer(name: "GPS_Container")
@@ -25,7 +27,17 @@ class CoreDataViewModel: ObservableObject{
         fetchgps()
     }
     func fetchgps() {
+       // let xxx = NSFetchRequest<GPSEntity>(entityName: "GPSEntity", with)
         let request = NSFetchRequest<GPSEntity>(entityName: "GPSEntity")
+        // works
+  //      request.predicate = NSPredicate(format: "phone_number BEGINSWITH %@", filt)
+        
+        //  works
+      request.predicate = NSPredicate(format: "lat >  %i", filt2)
+        
+//        let context = <#Managed object context#>
+//        let controller = NSFetchedResultsController(fetchRequest: "fetchRequest", managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+//
         do {
             savedEntities = try container.viewContext.fetch(request)
         }  catch let  error {
@@ -40,61 +52,137 @@ class CoreDataViewModel: ObservableObject{
             newgps.longt = parm2
             savedata()
         }
+    
+    func deleteGPS(indexSet: IndexSet) {
+        guard let index = indexSet.first else {return}
+        let entity = savedEntities[index]
+        container.viewContext.delete(entity)
+        savedata()
+    }
+    
         func savedata() {
+ //          savedEntities.removeAll()
+ //          savedata()
             do {
          try  container.viewContext.save()
                 fetchgps()
+                
             } catch let  error {
                 print("error saving \(error)")
             }
         }
+    func deletedata(indexSet: IndexSet) {
+      //    savedEntities.removeAll()
+      //    savedata()
+//        guard let index = indexSet.first else {return}
+//        let entity = savedEntities[index]
+//        ForEach (savedEntities) {entity in entity}
+//
+//
+//       let index = IndexSet.first else {return}
+//
+//        container.viewContext.delete(entity)
+    }
     }
 
 
 struct CoreDataBootCamp: View {
+  //  @ObservedObject var viewModel = ContentViewModel()
     @StateObject var vm = CoreDataViewModel()
+  //  @ObservableObject filtx = filt()
     @State var textfieldtext: String = ""
     @State var i: Double = 1
     @State var  j: Double = 2
     @State private var amt1 = ""
     @State private var amt2 = ""
+    @Environment(\.managedObjectContext) var moc
+// this fetchrequest is not being used.. fetch is in the coredataviewmodel
+   // @StateObject var filtx = filt()
+    @FetchRequest(sortDescriptors: [],
+                 predicate: nil
+             //     predicate: NSPredicate(format:
+             //                               "phone_number BEGINSWITH %@", "1111")
+                  ) var vmx:
+                  FetchedResults<GPSEntity>
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
+              //  Text("Filt is: \(filt)")
+                Text("\(vm.filt2)")
                 TextField("Add phone here", text: $textfieldtext)
                 TextField("Add lat", text: $amt1)
                 TextField("Add longtitud", text: $amt2)
                 let i = (amt1 as NSString).doubleValue
                 let j = (amt2 as NSString).doubleValue
                 
-                
+                Button ("add example") {
+                    let test1 = GPSEntity(context: moc)
+                    test1.phone_number = "3371234123"
+                    test1.longt = 90
+                    test1.lat = 90
+                    try? moc.save() 
+               
+
+                }
+
                 Button(action: {
-                  //  vm.addGPS(text: textfieldtext, parm1: 33, parm2: 94 )
+              
                     guard !textfieldtext.isEmpty else {return}
-                   // vm.addgps(text: textfieldtext)
+                  
                     vm.addgps(text: textfieldtext, parm1: i, parm2: j)
                     textfieldtext = ""
                 }, label: {
-                Text("Button")
+                Text("add Button")
                         .font(.headline)
                         .background(Color(.blue))
                         .foregroundColor(.white)
                 })
+//                Button(action: {
+//              
+//                  
+//                  
+//                    vm.deletedata()
+//                  
+//                }, label: {
+//                Text("delete Button")
+//                        .font(.headline)
+//                        .background(Color(.blue))
+//                        .foregroundColor(.white)
+//                })
                 
                 
                 Spacer()
+              //  filt()
                 List {
+                   
                     ForEach (vm.savedEntities) { entity in
-                        Text(entity.phone_number ?? "no name")
-                        Text("\(entity.lat)")
-                        Text("\(entity.longt)")
+                       let newline = Text(entity.phone_number ?? "no name"  ) + Text("        Lat:  \(entity.lat, specifier: "%.4f")") + Text("        Long: \(entity.longt, specifier: "%.4f")")
+                        Text("\(newline)")
+                            .font(.system(size: 8, weight: .medium, design: .rounded))
+                      
+                      
+                    
                         
                     }
+                    .onDelete(perform: vm.deleteGPS)
                 }
-        }
+                
+            }
         .navigationTitle("GPS")
     }
+        
+        
 }
+//    func filt (){
+//        let filttest = UIAlertAction(title:"Filtr", style: .default) {
+//            (action)  in
+//            self.fetchRequestWithTemplate(named: "FetchRequest")
+//        }
+//    }
+//    func fetchRequestWithTemplate(named:String) {
+//        coreData.fetchRequest(requestName: named)
+//        self.handle(result)
+//    }
 }
 struct CoreDataBootCamp_Previews: PreviewProvider {
     static var previews: some View {
