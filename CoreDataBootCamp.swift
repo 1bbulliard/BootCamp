@@ -12,10 +12,10 @@ class CoreDataViewModel: ObservableObject{
     let container:NSPersistentContainer
     @Published var savedEntities: [GPSEntity] = []
     @Published var filt = "1"
-    @Published var filt2 = 31
-    @Published var filt3 = 35
-    @Published var filt4 = 88
-    @Published var filt5 = 91
+    @Published var filt2 = 31.0
+    @Published var filt3 = 35.0
+    @Published var filt4 = 88.0
+    @Published var filt5 = 91.0
     init()
     {
         container = NSPersistentContainer(name: "GPS_Container")
@@ -42,9 +42,12 @@ class CoreDataViewModel: ObservableObject{
         // works!!
   //    request.predicate = NSPredicate(format: "lat > %i and lat < %i and longt > %i and longt < %i" , filt2, filt3, filt4, filt5)\
         // works!!
-request.predicate = NSPredicate(format: "lat > %d and lat < %d and longt > %d and longt < %d" , filt2, filt3, filt4, filt5)
-        // doesnt work
-        //request.predicate = NSPredicate(format: "lat > %f and lat < %f and longt > %f and longt < %f" , filt2, filt3, filt4, filt5)
+        // d is signed 32 bit integer and works even though lat is double.. think it works cause d indicates interger which is
+        //    what filt2,3,4,5 is.  if it were double, i should use f
+//request.predicate = NSPredicate(format: "lat > %d and lat < %d and longt > %d and longt < %d" , filt2, filt3, filt4, filt5)
+        // works work
+        // f should be floating point double
+        request.predicate = NSPredicate(format: "lat > %f and lat < %f and longt > %f and longt < %f" , filt2, filt3, filt4, filt5)
 //        let context = <#Managed object context#>
 //        let controller = NSFetchedResultsController(fetchRequest: "fetchRequest", managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
 //
@@ -56,12 +59,12 @@ request.predicate = NSPredicate(format: "lat > %d and lat < %d and longt > %d an
     }
       //  func addgps (text: String) {
             func addgps (text: String, parm1: Double, parm2:Double) {
-                let x = Int(parm1)
-                let y = Int(parm2)
-                filt2 = x - 5
-                filt3 = x + 5
-                filt4 = y - 5
-                filt5 = y + 5
+//let x = Int(parm1)
+  //              let y = Int(parm2)
+                filt2 = parm1 - 5.0
+                filt3 = parm1 + 5.0
+                filt4 = parm2 - 5.0
+                filt5 = parm2 + 5.0
             let newgps = GPSEntity(context: container.viewContext)
             newgps.phone_number = text
             newgps.lat = parm1
