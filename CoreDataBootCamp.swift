@@ -12,8 +12,10 @@ class CoreDataViewModel: ObservableObject{
     let container:NSPersistentContainer
     @Published var savedEntities: [GPSEntity] = []
     @Published var filt = "1"
-    @Published var  filt2 = 31
+    @Published var filt2 = 31
     @Published var filt3 = 35
+    @Published var filt4 = 88
+    @Published var filt5 = 91
     init()
     {
         container = NSPersistentContainer(name: "GPS_Container")
@@ -36,8 +38,13 @@ class CoreDataViewModel: ObservableObject{
         //  works
     //  request.predicate = NSPredicate(format: "lat >  %i", filt2)
         // works!!!
-       request.predicate = NSPredicate(format: "lat > %i and lat < %i", filt2, filt3)
-        
+  //     request.predicate = NSPredicate(format: "lat > %i and lat < %i", filt2, filt3)
+        // works!!
+  //    request.predicate = NSPredicate(format: "lat > %i and lat < %i and longt > %i and longt < %i" , filt2, filt3, filt4, filt5)\
+        // works!!
+request.predicate = NSPredicate(format: "lat > %d and lat < %d and longt > %d and longt < %d" , filt2, filt3, filt4, filt5)
+        // doesnt work
+        //request.predicate = NSPredicate(format: "lat > %f and lat < %f and longt > %f and longt < %f" , filt2, filt3, filt4, filt5)
 //        let context = <#Managed object context#>
 //        let controller = NSFetchedResultsController(fetchRequest: "fetchRequest", managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
 //
@@ -49,6 +56,12 @@ class CoreDataViewModel: ObservableObject{
     }
       //  func addgps (text: String) {
             func addgps (text: String, parm1: Double, parm2:Double) {
+                let x = Int(parm1)
+                let y = Int(parm2)
+                filt2 = x - 5
+                filt3 = x + 5
+                filt4 = y - 5
+                filt5 = y + 5
             let newgps = GPSEntity(context: container.viewContext)
             newgps.phone_number = text
             newgps.lat = parm1
@@ -111,22 +124,28 @@ struct CoreDataBootCamp: View {
         NavigationView {
             VStack(spacing: 20) {
               //  Text("Filt is: \(filt)")
-                Text("\(vm.filt2)")
+          //      vm.filt2 = 32
+            //    vm.filt3 = 35
+             //   vm.filt4 = 88
+             //   vm.filt2 = 20
+            
+              //  Text("\(vm.filt2)")
+                
                 TextField("Add phone here", text: $textfieldtext)
                 TextField("Add lat", text: $amt1)
                 TextField("Add longtitud", text: $amt2)
                 let i = (amt1 as NSString).doubleValue
                 let j = (amt2 as NSString).doubleValue
                 
-                Button ("add example") {
-                    let test1 = GPSEntity(context: moc)
-                    test1.phone_number = "3371234123"
-                    test1.longt = 90
-                    test1.lat = 90
-                    try? moc.save() 
-               
-
-                }
+//                Button ("add example") {
+//                    let test1 = GPSEntity(context: moc)
+//                    test1.phone_number = "3371234123"
+//                    test1.longt = 90
+//                    test1.lat = 90
+//                    try? moc.save() 
+//               
+//
+//                }
 
                 Button(action: {
               
@@ -153,7 +172,7 @@ struct CoreDataBootCamp: View {
 //                        .foregroundColor(.white)
 //                })
                 
-                
+                Text("Searching from lat \(vm.filt2) to lat \(vm.filt3) / Searching from longt: \(vm.filt4) to longt: \(vm.filt5)  ")
                 Spacer()
               //  filt()
                 List {
